@@ -1,6 +1,10 @@
 CURR_PATH=`cd $(dirname $0);pwd;`
 cd $CURR_PATH
 
+pip install -r requirements.txt
+
+python -c "import stanza; stanza.download('ar')"
+
 url="https://bakrianoo.sfo2.digitaloceanspaces.com/aravec/full_grams_cbow_100_wiki.zip"
 f="models/full_grams_cbow_100_wiki.zip"
 if [ ! -f $f ];

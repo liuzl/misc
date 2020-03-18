@@ -1,5 +1,5 @@
 import stanza
-stanza.download('ar')
+#stanza.download('ar')
 nlp = stanza.Pipeline(lang='ar')
 
 import gensim
