@@ -3,9 +3,6 @@ import stanza
 nlp = stanza.Pipeline(lang='ar')
 
 import gensim
-import re
-import numpy as np
-from nltk import ngrams
 from util import *
 
 model = gensim.models.Word2Vec.load('models/full_grams_cbow_100_wiki.mdl')
